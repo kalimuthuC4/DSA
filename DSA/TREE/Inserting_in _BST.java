@@ -19,10 +19,10 @@ public class Main
                 return nn;
             }
             else if(root.val>k){
-                InsertBST(root.left,k);
+                root.left = InsertBST(root.left,k);
             }
             else{
-                InsertBST(root.right,k);
+                root.right = InsertBST(root.right,k);
             }
             return root;
     }
