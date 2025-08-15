@@ -19,7 +19,7 @@ public class Main
         while(cur!=null || s.size()>0){
             if(cur != null){
                 s.push(cur);
-                System.out.print(cur.val+" ");//preorder
+                System.out.print(cur.val+" ");//inorder
                 cur = cur.left;
             }else{
                 cur = s.pop();
@@ -36,7 +36,7 @@ public class Main
                 cur = cur.left;
             }else{
                 cur = s.pop();
-                System.out.print(cur.val+" ");// inorder
+                System.out.print(cur.val+" ");// preorder
                 cur = cur.right;
             }
         }
